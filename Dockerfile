@@ -1,5 +1,4 @@
-#the name of the image that we will get it from the dockerhub  
 FROM openjdk:8-jre-alpine
-ADD target/chebbiMS-1.0.jar chebbiMS.jar
+ADD target/Docker-0.0.1-SNAPSHOT.jar docker.jar
 EXPOSE 8090
-ENTRYPOINT ["java","-jar","/chebbiMS.jar"]
+ENTRYPOINT ["java","-jar","/docker.jar"]

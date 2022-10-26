@@ -1,6 +1,7 @@
 package tn.esprit.spring.controller;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,14 +12,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+
 import tn.esprit.spring.entities.Fournisseur;
 import tn.esprit.spring.services.IFournisseurService;
 
-import io.swagger.annotations.Api;
+//import io.swagger.annotations.Api;
 
 
 @RestController
-@Api(tags = "Gestion des fournisseurss")
+//@Api(tags = "Gestion des fournisseurss")
 @RequestMapping("/fournisseur")
 public class FournisseurRestController {
 
